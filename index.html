@@ -139,6 +139,26 @@
             display: block;
             margin-top: 5px;
         }
+        /* Mantra Animasi - Masukin di bagian <style> paling bawah */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-me {
+            opacity: 0; /* Mulai dari ilang dulu */
+            animation: fadeInUp 1s ease-out forwards; /* Jalani animasi 1 detik */
+        }
+
+        /* Kasih delay biar nggak barengan munculnya */
+        .delay-1 { animation-delay: 0.3s; }
+        .delay-2 { animation-delay: 0.6s; }
     </style>
 </head>
 <body>
@@ -149,10 +169,10 @@
         </header>
 
         <div class="hero-image">
-            <img src="cover-buku.jpg" alt="Cover Buku">
+            <img src="cover-buku.jpg" alt="Cover Buku" class="animate-me delay-1">
         </div>
 
-        <div class="quote-card">
+        <div class="quote-card animate-me delay-2">
             <p>"Berhenti jadi korban tren laptop baru yang harganya naik gila-gilaan tapi kualitas makin ringkih. Lu bisa dapet mesin 'badak' spek dewa di harga separuhnya, asal tau cara ngoprek dan ngetesnya."</p>
             <span>— Rendra Soeria</span>
         </div>
@@ -194,7 +214,7 @@
 
         <a href="#" class="btn">
             DAPATKAN E-BOOK SEKARANG
-            <span>(Coming Soon)</span>
+            <span>(Segera)</span>
         </a>
 
         <footer style="text-align: center; padding-bottom: 40px; font-size: 0.8rem; color: #888;">
