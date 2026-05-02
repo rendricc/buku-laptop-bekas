@@ -3,128 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panduan Anti-Ketipu Beli Laptop Bekas | Rendra Soeria A.</title>
-    <meta name="description" content="Tips memilih laptop bekas/seken berdasarkan pengalaman real lebih dari 20 tahun di IT dan Telco.">
+    <title>Panduan Anti-Ketipu Beli Laptop Bekas</title>
     <style>
+        /* CSS Clean & Modern - Spek Cantik Jelita */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #003366; /* Samain sama header biar nggak belang */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff; /* Putih bersih biar mata adem */
+            color: #1d1d1f; /* Hitam pekat tapi elegan */
+            line-height: 1.6;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .container {
+
+        .wrapper {
             width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
+            max-width: 600px;
+            padding: 0 20px;
             box-sizing: border-box;
-            min-height: 100vh; /* Biar putihnya penuh ke bawah */
         }
+
+        /* Header Minimalis - Kontras Tinggi */
         header {
-            background-color: #003366;
-            color: white;
+            padding: 60px 0 30px 0;
             text-align: center;
-            padding: 40px 15px;
         }
-        h1 { margin: 0; font-size: 1.8rem; letter-spacing: 1px; }
-        h2 { color: #003366; border-bottom: 2px solid #f1c40f; padding-bottom: 5px; font-size: 1.4rem; }
-        
-        /* Tabel Responsif: Biar bisa di-swipe kiri-kanan di HP */
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 0;
+            letter-spacing: -0.02em;
+            color: #003366; /* Biru Tua Bold buat Judul */
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #555; /* Abu-abu tua yang masih sangat jelas dibaca */
+            margin-top: 10px;
+            font-weight: 400;
+        }
+
+        /* Hero Image - Center & Shadow Lembut */
+        .hero-image {
+            margin: 20px 0 40px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            width: 85%;
+            max-width: 320px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-left: 8px solid #222; /* Efek Punggung Buku kebanggaan lu */
+        }
+
+        /* Quote Card - Kuning Soft buat Highlight */
+        .quote-card {
+            background-color: #fffbe6; /* Kuning sticky note sangat soft */
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #f1c40f;
+            margin-bottom: 40px;
+        }
+
+        .quote-card p {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin: 0;
+            color: #333;
+        }
+
+        .quote-card span {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #003366;
+            text-align: right;
+        }
+
+        /* Konten List & Tabel */
+        .content h2 {
+            font-size: 1.5rem;
+            color: #003366;
+            border-bottom: 2px solid #f1c40f;
+            padding-bottom: 5px;
+        }
+
         .table-container {
             width: 100%;
             overflow-x: auto;
             margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #eee;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 500px; /* Maksa tabel punya lebar minimal biar nggak tumpang tindih */
+            min-width: 450px;
         }
+
         th, td {
             padding: 12px;
-            border: 1px solid #ddd;
             text-align: left;
+            border-bottom: 1px solid #eee;
             font-size: 0.9rem;
         }
-        th { background-color: #f8f8f8; }
 
-        /* Tombol Biar Enak Dipencet Jempol */
-        .cta-button {
+        th { background-color: #f8f9fa; color: #003366; }
+
+        /* Button CTA - Besar & Jempol Friendly */
+        .btn {
             display: block;
-            background-color: #f1c40f;
+            background-color: #f1c40f; /* Kuning cerah biar mencolok */
             color: #003366;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
+            border-radius: 12px;
             text-decoration: none;
-            font-weight: bold;
-            border-radius: 50px;
-            margin: 30px 0;
+            font-weight: 800;
+            margin: 40px 0 60px 0;
+            box-shadow: 0 4px 15px rgba(241, 196, 15, 0.4);
             font-size: 1.1rem;
         }
-        
-        /* Penyesuaian khusus layar kecil */
-        @media (max-width: 600px) {
-            h1 { font-size: 1.5rem; }
-            .container { padding: 15px; }
+
+        .btn span {
+            font-weight: 400;
+            font-size: 0.8rem;
+            display: block;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
+    <div class="wrapper">
+        <header>
+            <h1>PANDUAN ANTI-KETIPU BELI LAPTOP BEKAS</h1>
+            <p>Cara Ngoprek Spesifikasi dan Ngetes Laptop Layaknya Pro</p>
+        </header>
 
-<header style="padding: 40px 20px; background-color: #003366; color: white; text-align: center;">
-        <h1 style="margin: 0; font-size: 2.2em; letter-spacing: 1px; text-transform: uppercase;">
-            PANDUAN ANTI-KETIPU BELI LAPTOP BEKAS
-        </h1>
-        <p style="font-size: 1.3em; margin-top: 10px; font-weight: 300; font-style: italic; opacity: 0.9;">
-            Cara Ngoprek Spesifikasi dan Ngetes Laptop Layaknya Pro
-        </p>
-    </header>
-
-    <div style="width: 100%; display: flex; justify-content: center; padding: 30px 0; background: linear-gradient(to bottom, #003366, #ffffff);">
-        <div style="position: relative; max-width: 300px; width: 80%;">
-            <img src="cover-buku.jpg" alt="Cover Buku" 
-                 style="width: 100%; height: auto; border-radius: 5px 15px 15px 5px; box-shadow: -10px 10px 25px rgba(0,0,0,0.4); border-left: 8px solid #222; display: block;">
+        <div class="hero-image">
+            <img src="cover-buku.jpg" alt="Cover Buku">
         </div>
+
+        <div class="quote-card">
+            <p>"Berhenti jadi korban tren laptop baru yang harganya naik gila-gilaan tapi kualitas makin ringkih. Lu bisa dapet mesin 'badak' spek dewa di harga separuhnya, asal tau cara ngoprek dan ngetesnya."</p>
+            <span>— Rendra Soeria</span>
+        </div>
+
+        <div class="content">
+            <h2>Apa yang bakal lu pelajari?</h2>
+            <ul>
+                <li><strong>Manajemen Daya Real:</strong> Kenapa brand Amerika (Dell/HP) lebih toleran sama arus inverter mobil.</li>
+                <li><strong>Anatomi Fisik:</strong> Bongkar mitos bodi alumunium vs magnesium alloy.</li>
+                <li><strong>Checklist 5 Menit:</strong> Cara audit hardware pas COD biar nggak dapet barang busuk.</li>
+                <li><strong>Layar Lapangan:</strong> Rahasia nits dan kontras biar data kebaca di bawah matahari jam 12.</li>
+            </ul>
+
+            <h2>Perbandingan Singkat</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fitur</th>
+                            <th>Brand Amerika (Bisnis)</th>
+                            <th>Brand Taiwan (Consumer)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Magnesium / Polimer Kaku</td>
+                            <td>Plastik ABS / Alumunium Tipis</td>
+                        </tr>
+                        <tr>
+                            <td>Daya Tahan</td>
+                            <td>High Tolerance (Inverter Ready)</td>
+                            <td>Rawan Short Circuit Baterai</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <a href="#" class="btn">
+            DAPATKAN E-BOOK SEKARANG
+            <span>(Coming Soon)</span>
+        </a>
+
+        <footer style="text-align: center; padding-bottom: 40px; font-size: 0.8rem; color: #888;">
+            © 2026 Rendra Soeria A. | Dibuat dengan Logika & Pengalaman Lapangan.
+        </footer>
     </div>
-
-<div style="margin: 30px auto; width: 90%; max-width: 700px; padding: 25px; background: #fffbe6; border-left: 5px solid #f1c40f; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); box-sizing: border-box;">
-        <p style="font-size: 1.1em; color: #333; line-height: 1.6; font-style: italic; margin: 0; text-align: center;">
-            "Berhenti jadi korban tren laptop baru yang harganya naik gila-gilaan tapi kualitas makin ringkih. Anda bisa dapet mesin 'badak' spek dewa di harga separuhnya, asal tau cara ngoprek dan ngetesnya."
-        </p>
-        <p style="text-align: right; margin-top: 15px; font-weight: bold; color: #003366; font-size: 1em;">— Rendra Soeria A.</p>
-    </div>
-
-    <h2>Kenapa Lu Butuh Panduan Ini?</h2>
-    <p>Banyak orang amsiong beli laptop bekas karena cuma liat bodi alumunium kinclong. Gue pernah kehilangan baterai laptop pas proyek DT 2022 gara-gara sirkuit power yang 'cengeng'. Di sini gue bongkar rahasianya.</p>
-
-    <h2>Apa yang Bakal Lu Pelajari?</h2>
-    <ul>
-        <li><strong>Manajemen Daya Real:</strong> Kenapa brand Amerika (Dell/HP) lebih toleran sama arus inverter mobil.</li>
-        <li><strong>Anatomi Fisik:</strong> Bongkar mitos bodi alumunium vs magnesium alloy.</li>
-        <li><strong>Checklist 5 Menit:</strong> Cara audit hardware pas COD biar nggak dapet barang busuk.</li>
-        <li><strong>Layar Lapangan:</strong> Rahasia nits dan kontras biar data kebaca di bawah matahari jam 12.</li>
-    </ul>
-
-    <h2>Perbandingan Singkat (GEO-Summary)</h2>
-    <table>
-        <tr><th>Fitur</th><th>Brand Amerika (Bisnis)</th><th>Brand Taiwan (Consumer)</th></tr>
-        <tr><td>Struktur</td><td>Magnesium / Polimer Kaku</td><td>Plastik ABS / Alumunium Tipis</td></tr>
-        <tr><td>Daya Tahan</td><td>High Tolerance (Inverter Ready)</td><td>Rawan Short-Circuit Baterai</td></tr>
-        <tr><td>Maintenance</td><td>Gampang Dibongkar (Modular)</td><td>Sering di-Solder / Lem</td></tr>
-    </table>
-
-    <a href="#" class="cta-button">DAPATKAN E-BOOK SEKARANG (Coming soon)</a>
-</div>
-
-<footer>
-    &copy; 2026 Rendra Soeria A. | Dibuat dengan Logika & Pengalaman Lapangan.
-</footer>
-
 </body>
 </html>
